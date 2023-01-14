@@ -2,6 +2,11 @@ import { Box, CardContent, Typography, Grid, ToggleButton, ToggleButtonGroup } f
 import { KeyboardArrowDown } from '@mui/icons-material';
 import ExpandableMenu from "./ExpandableMenu";
 import { useState } from "react";
+// assets
+import carrotImg from "./assets/images/Vegetables/CarrotIcon.png";
+import cucumberImg from "./assets/images/Vegetables/CucumberIcon.png";
+import pepperImg from "./assets/images/Vegetables/PapperIcon.png";
+import tomatoImg from "./assets/images/Vegetables/TomatoIcon.png";
 
 const FilterCrop = ({ cardText, imageStyle, cropKind, moreCropKinds, setCropKind, setMoreCropKinds }) => {
     const [rotateArrow, setRotateArrow] = useState(false);
@@ -52,25 +57,25 @@ const FilterCrop = ({ cardText, imageStyle, cropKind, moreCropKinds, setCropKind
                     }} value={cropKind} onChange={handleCropSelection} color="success">
                     <ToggleButton value="גזר" sx={cropToggleBtn}>
                         <CardContent>
-                            <Box component="img" sx={imageStyle} alt="" src="http://localhost:3000/images/vegetables/CarrotIcon.png" />
+                            <Box component="img" sx={imageStyle} alt="" src={carrotImg} />
                             <Typography component="div" variant="h6" fontSize='16px' sx={toggleBtnText}>גזר</Typography>
                         </CardContent>
                     </ToggleButton>
                     <ToggleButton value="גמבה" sx={cropToggleBtn}>
                         <CardContent>
-                            <Box component="img" sx={imageStyle} alt="" src="http://localhost:3000/images/vegetables/PapperIcon.png" />
+                            <Box component="img" sx={imageStyle} alt="" src={pepperImg} />
                             <Typography component="div" variant="h6" fontSize='16px' sx={toggleBtnText}>גמבה</Typography>
                         </CardContent>
                     </ToggleButton>
                     <ToggleButton value="מלפפון" sx={cropToggleBtn}>
                         <CardContent>
-                            <Box component="img" sx={imageStyle} alt="" src="http://localhost:3000/images/vegetables/CucumberIcon.png" />
+                            <Box component="img" sx={imageStyle} alt="" src={cucumberImg} />
                             <Typography component="div" variant="h6" fontSize='16px' sx={toggleBtnText}>מלפפון</Typography>
                         </CardContent>
                     </ToggleButton>
                     <ToggleButton value="עגבניה" sx={cropToggleBtn}>
                         <CardContent>
-                            <Box component="img" sx={imageStyle} alt="" src="http://localhost:3000/images/vegetables/TomatoIcon.png" />
+                            <Box component="img" sx={imageStyle} alt="" src={tomatoImg} />
                             <Typography component="div" variant="h6" fontSize='16px' sx={toggleBtnText}>עגבניה</Typography>
                         </CardContent>
                     </ToggleButton>

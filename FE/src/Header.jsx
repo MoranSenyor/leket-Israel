@@ -2,6 +2,8 @@ import { Typography, AppBar, Toolbar, Button, ButtonGroup, Box } from "@mui/mate
 import { Toc, Add } from '@mui/icons-material';
 import { useState } from "react";
 import AddField from "./AddField";
+// assets
+import gridFormImg from "./assets/images/header/gridForm.png";
 
 const Header = ({ setDensity, setSearchText, CustomSearch }) => {
     const [open, setOpen] = useState(false);
@@ -57,7 +59,7 @@ const Header = ({ setDensity, setSearchText, CustomSearch }) => {
                 <Toolbar variant="dense">
                     <ButtonGroup variant="contained" sx={{ borderRadius: '10%' }}>
                         <Button onClick={handleClickViewBtnColor} sx={leftButtonStyle}>
-                            <Box component="img" alt="" width={25} height={25} src="http://localhost:3000/images/header/gridForm.png"
+                            <Box component="img" alt="" width={25} height={25} src={gridFormImg}
                                 sx={{ filter: leftBtnColor === 'orange' ? 'brightness(0) invert(1)' : 'invert(34%) sepia(56%) saturate(372%) hue-rotate(83deg) brightness(75%) contrast(87%)', }} />
                         </Button>
                         <Button onClick={handleClickViewBtnColor} sx={rightButtonStyle}>
