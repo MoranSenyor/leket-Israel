@@ -4,6 +4,7 @@ import Header from "./Header";
 import Sidebar from "./Sidebar";
 import CustomSearch from "./CustomSearch";
 import Home from "./Home";
+import SignIn from "./pages/signIn";
 
 function App() {
   const [density, setDensity] = useState('standard');
@@ -16,7 +17,7 @@ function App() {
       <br />
       <Routes>
         <Route path="/"
-          element={<Home density={density} searchText={searchText} />}>
+          element={<SignIn />}>
         </Route>
       </Routes>
     </BrowserRouter>
