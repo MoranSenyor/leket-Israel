@@ -5,6 +5,7 @@ import Sidebar from "./Sidebar";
 import CustomSearch from "./CustomSearch";
 import Home from "./Home";
 import SignIn from "./pages/signIn";
+import SignUp from "./pages/signup";
 
 function App() {
   const [density, setDensity] = useState('standard');
@@ -17,7 +18,7 @@ function App() {
       <br />
       <Routes>
         <Route path="/"
-          element={<SignIn />}>
+          element={<SignUp />}>
         </Route>
       </Routes>
     </BrowserRouter>
