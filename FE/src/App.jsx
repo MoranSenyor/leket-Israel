@@ -18,7 +18,7 @@ function App() {
       <br />
       <Routes>
         <Route path="/"
-          element={<SignIn />}>
+          element={<Home density={density} searchText={searchText} />}>
         </Route>
       </Routes>
     </BrowserRouter>
